@@ -1,0 +1,9 @@
+name: Deploy
+on: push
+jobs:
+  deploy:
+  - uses: actions/checkout@v3
+  - uses: actions/upload-artifact@v3
+        with:
+          name: app
+          path: public
